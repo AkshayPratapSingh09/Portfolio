@@ -4,6 +4,7 @@ import './header.css'
 function Header() {
   return (
     <>
+    <div className="container">
     <a href='#' className='logo'><i className='ri-home-fill'></i><span>Logo</span></a>
     <ul className='navbar'>
         <li><a href='#' className='active'>Home</a></li>
@@ -11,6 +12,9 @@ function Header() {
         <li><a href='#'>Skills</a></li>
         <li><a href='#'>Projects</a></li>
         <li><a href='#'>Contact</a></li>
+        </ul>
+        </div>
+      
     </ul>
     </>
   )
