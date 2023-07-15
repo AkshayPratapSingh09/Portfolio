@@ -21,7 +21,7 @@ function projects() {
     <div>this one is not wotkimg</div>
     <div>this one is not wotkimg</div>
     <div>this one is not wotkimg</div>
-    <div>this one is not wotkimg</div>
+    <div>hi</div>
     </>
   )
 }
