@@ -14,6 +14,12 @@ function Header() {
         <li><a href='#'>Contact</a></li>
         </ul>
         </div>
+        <div className="forget">this is the last ploay arrounf</div>
+        <div className="forget">this is the last ploay arrounf</div>
+        <div className="forget">this is the last ploay arrounf</div>
+        <div className="forget">this is the last ploay arrounf</div>
+        <div className="forget">this is the last ploay arrounf</div>
+        <div className="forget">this is the last ploay arrounf</div>
       
     </ul>
     </>
