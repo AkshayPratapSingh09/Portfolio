@@ -5,6 +5,16 @@ function body() {
     <>
     <div>This is the main body </div>
     </>
+    <div>This is the main body </div>
+    </>
+    <div>This is the main body </div>
+    </>
+    <div>This is the main body </div>
+    </>
+    <div>This is the main body </div>
+    </>
+    <div>This is the main body </div>
+    </>
   )
 }
 
