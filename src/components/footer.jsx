@@ -7,8 +7,6 @@ function footer() {
 <li>First</li>
 <li>Second</li>
 <li>First</li>
-<li>First</li>
-
     </ul>
     </>
 
