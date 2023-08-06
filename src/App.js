@@ -10,6 +10,11 @@ function App() {
 <body/>
   Its a portfolio
     </>  );
+    <>
+<Header/>
+<body/>
+  Its a portfolio
+    </>  );
 }
 
 export default App;
