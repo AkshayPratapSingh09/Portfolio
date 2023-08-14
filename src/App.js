@@ -12,6 +12,8 @@ function App() {
     </>  );
     <>
 <Header/>
+<BODYR/>
+<Footer/>
 <body/>
   Its a portfolio
     </>  );
