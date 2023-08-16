@@ -8,12 +8,7 @@ function App() {
     <>
 <Header/>
 <body/>
-  Its a portfolio
-    </>  );
-    <>
-<Header/>
-<BODYR/>
-<Footer/>
+  <Footer/>
 <body/>
   Its a portfolio
     </>  );
