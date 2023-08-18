@@ -33,13 +33,6 @@ export default function App() {
             <MDBIcon fab icon='twitter' />
           </MDBBtn>
 
-          <MDBBtn
-            floating
-            className='m-1'
-            style={{ backgroundColor: '#dd4b39' }}
-            href='#!'
-            role='button'
-          >
             <MDBIcon fab icon='google' />
           </MDBBtn>
           <MDBBtn
