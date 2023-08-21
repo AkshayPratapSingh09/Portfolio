@@ -9,6 +9,12 @@ function App() {
 <Header/>
 <body/>
   <Footer/>
+<Header/>
+<body/>
+  <Footer/>
+<Header/>
+<body/>
+  <Footer/>
 <body/>
   Its a portfolio
     </>  );
