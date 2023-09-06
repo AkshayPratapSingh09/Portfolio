@@ -7,26 +7,6 @@ function App() {
   return (
     <>
 <Header/>
-<body/>
-  <Footer/>
-<Header/>
-<body/>
-  <Footer/>
-<Header/>
-<body/>
-  <Footer/>
-<body/>
-  Its a portfolio
-<Header/>
-<body/>
-  <Footer/>
-<Header/>
-<body/>
-  <Footer/>
-<Header/>
-<body/>
-  <Footer/>
-<body/>
   Its a portfolio
     </>  );
 }
