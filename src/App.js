@@ -8,6 +8,9 @@ function App() {
     <>
 <Header/>
   Its a portfolio
+  Its a portfolio
+  Its a portfolio
+  Its a portfolio
     </>  );
 }
 
