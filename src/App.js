@@ -6,12 +6,7 @@ import body from "./components/body";
 function App() {
   return (
     <>
-<Header/>
-  Its a portfolio
-  Its a portfolio
-  Its a portfolio
-  Its a portfolio
-    </>  );
+<Header/>X
 }
 
 export default App;
