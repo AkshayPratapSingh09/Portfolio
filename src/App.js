@@ -7,6 +7,19 @@ function App() {
   return (
     <>
 <Header/>X
+<Header/>X
+<Header/>X
+<Header/>X
+<Header/>X
+<Header/>X
+<Header/>X
+<Header/>X
+<Header/>X
+<Header/>X
+<Header/>X
+<Header/>X
+<Header/>X
+<Header/>X
 }
 
 export default App;
