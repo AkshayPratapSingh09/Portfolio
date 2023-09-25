@@ -6,20 +6,8 @@ import body from "./components/body";
 function App() {
   return (
     <>
-<Header/>X
-<Header/>X
-<Header/>X
-<Header/>X
-<Header/>X
-<Header/>X
-<Header/>X
-<Header/>X
-<Header/>X
-<Header/>X
-<Header/>X
-<Header/>X
-<Header/>X
-<Header/>X
+<Header/>
+
 }
 
 export default App;
