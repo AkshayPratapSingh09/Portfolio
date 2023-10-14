@@ -11,6 +11,7 @@ function App() {
     <HeroContainer/>
     <SideContainer/>
     <SideBarContainer/>
+    <SideBarContainerer/>
     <Footer/>
 
 }
