@@ -15,6 +15,8 @@ function App() {
     <SideContainer/>
     <SideBarContainer/>
     <SideBar2Container/>
+    <SideBar2Container/>
+    <SideBar2Container/>
     <SideBarContainerer/>
     <Footer/>
 
