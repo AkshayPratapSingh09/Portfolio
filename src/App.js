@@ -9,6 +9,8 @@ function App() {
 <Header/>
     <MainContainer/>
     <HeroContainer/>
+    <MainContainer/>
+    <HeroContainer/>
     <Hero2Container/>
     <SideContainer/>
     <SideBarContainer/>
