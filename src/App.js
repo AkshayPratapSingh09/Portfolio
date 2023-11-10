@@ -9,14 +9,6 @@ function App() {
 <Header/>
     <MainContainer/>
     <SideBarContainerer/>
-     <MainContainer/>
-    <SideBarContainerer/>
-    <SideBarContainerer/>
-     <MainContainer/>
-    <SideBarContainerer/>
-    <SideBarContainerer/>
-     <MainContainer/>
-    <SideBarContainerer/>
     <Footer/>
 
 }
