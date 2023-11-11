@@ -10,6 +10,10 @@ function App() {
     <MainContainer/>
     <SideBarContainerer/>
     <Footer/>
+<Header/>
+    <MainContainer/>
+    <SideBarContainerer/>
+    <Footer/>
 
 }
 
