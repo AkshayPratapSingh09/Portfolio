@@ -10,11 +10,6 @@ function App() {
     <MainContainer/>
     <SideBarContainerer/>
     <Footer/>
-<Header/>
-    <MainContainer/>
-    <SideBarContainerer/>
-    <Footer/>
-
 }
 
 export default App;
