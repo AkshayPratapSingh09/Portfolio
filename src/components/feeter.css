@@ -7,3 +7,12 @@
 .active{
 
 }
+*{
+    background-color: blue;
+    flex-direction: left;
+    
+}
+
+.active{
+
+}
