@@ -8,8 +8,6 @@ function App() {
     <>
 <Header/>
     <MainContainer/>
-    <SideBarContainerer/>
-    <Footer/>
 }
 
 export default App;
