@@ -8,6 +8,7 @@ function App() {
     <>
 <Header/>
     <MainContainer/>
+    <Footer/>
 }
 
 export default App;
