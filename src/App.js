@@ -9,6 +9,7 @@ function App() {
 <Header/>
     <MainContainer/>
     <Footer/>
+    <Footer/>
 }
 
 export default App;
