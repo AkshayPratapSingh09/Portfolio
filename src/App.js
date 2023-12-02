@@ -7,10 +7,12 @@ function App() {
   return (
     <>
 <Header/>
+<Header2/>
     <MainContainer/>
     <Footer/>
     <Footer2/>
     <Footer3/>
+    <Footer4/>
 }
 
 export default App;
