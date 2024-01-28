@@ -7,65 +7,83 @@ const projectData = [
   {
     image: "/work/3.png",
     category: "react js",
-    name: "Nexa Website",
+    name: "Shoppers Assist",
     description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus eveniet est tenetur quisquam dolore",
-    link: "/",
-    github: "/",
+      "Etsy Sellers' Assistant to Help choose your next product better!",
+    link: "shoper-six.vercel.app",
+    github: "https://github.com/AkshayPratapSingh09/Shoper",
   },
   {
     image: "/work/1.png",
-    category: "next js",
-    name: "Solestice Website",
+    category: "react js",
+    name: "Wordly Text Playground",
     description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus eveniet est tenetur quisquam dolore",
-    link: "/",
-    github: "/",
+      "Play with your text and track every word of it!",
+    link: "https://wordly-pi.vercel.app/",
+    github: "https://github.com/AkshayPratapSingh09/Wordly--Text-Playground",
+  },
+  {
+    image: "/work/2.png",
+    category: "react js",
+    name: "The Idea App",
+    description:
+      "Todo Themed Web App to collect your idea and frame them in organised manner",
+    link: "https://the-idea-app.vercel.app/",
+    github: "https://github.com/AkshayPratapSingh09/The-Idea-App",
   },
   {
     image: "/work/2.png",
     category: "Html CSS",
-    name: "Lumina Website",
+    name: "Gemini AI Extension",
     description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus eveniet est tenetur quisquam dolore",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "Html CSS",
-    name: "Evolve Website",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus eveniet est tenetur quisquam dolore",
-    link: "/",
-    github: "/",
+      "Your Personal Google's Gemini Based Chat Assistant to help you multitask with Ocean of knowledge",
+    link: "https://github.com/AkshayPratapSingh09/Gemini-Extension",
+    github: "https://github.com/AkshayPratapSingh09/Gemini-Extension",
   },
   {
     image: "/work/4.png",
     category: "react js",
-    name: "Ignite Website",
+    name: "Style - Find Fonts",
     description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus eveniet est tenetur quisquam dolore",
-    link: "/",
-    github: "/",
+      "Find your favourite Fonts from the depth of Gihub repos!",
+    link: "https://stylerv0.vercel.app/",
+    github: "https://github.com/AkshayPratapSingh09/Styler",
   },
   {
     image: "/work/4.png",
     category: "react js",
-    name: "Envision Website",
+    name: "Personal Expense Tracker",
     description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus eveniet est tenetur quisquam dolore",
-    link: "/",
-    github: "/",
+      "Fix your budget and track your Expenses!",
+    link: "https://geekap09.github.io/React-Expense-Tracker/",
+    github: "https://github.com/AkshayPratapSingh09/React-Expense-Tracker",
   },
   {
     image: "/work/4.png",
     category: "react js",
-    name: "Envision Website",
+    name: "ELA - Ecommerce",
     description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus eveniet est tenetur quisquam dolore",
-    link: "/",
-    github: "/",
+      "Fully Functional Ecommerce Web App for Shopping Goods.",
+    link: "http://devap09.pythonanywhere.com/#/",
+    github: "https://github.com/AkshayPratapSingh09/React-Ecom-Site",
+  },
+  {
+    image: "/work/4.png",
+    category: "react js",
+    name: "Movie Recommender",
+    description:
+      "Movie Recommendation System based on IMDb data.",
+    link: "https://geekap09-movie-recommendation-system-1-we-dy9j2v.streamlit.app/",
+    github: "https://github.com/AkshayPratapSingh09/movie-recommendation-system",
+  },
+  {
+    image: "/work/4.png",
+    category: "react js",
+    name: "Bookey - The Bookmark App",
+    description:
+      "One Spot for storing your Bookmarks and readlists!",
+    link: "https://bookey.vercel.app/",
+    github: "https://github.com/GeekAp09/Bookey",
   },
 ];
 
