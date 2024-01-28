@@ -10,7 +10,7 @@ const projectData = [
     name: "Shoppers Assist",
     description:
       "Etsy Sellers' Assistant to Help choose your next product better!",
-    link: "shoper-six.vercel.app",
+    link: "https://shoper-six.vercel.app",
     github: "https://github.com/AkshayPratapSingh09/Shoper",
   },
   {
