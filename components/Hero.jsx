@@ -24,10 +24,9 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Full Stack Developer
             </div>
-            <h1 className="h1 mb-4">Hello , my name is Akshay Pratap Singh</h1>
+            <h1 className="h1 mb-4">Hello , my name is <h1 className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Akshay Pratap Singh</h1></h1>
             <p className="subtitle max-w-[490] mx-auto xl:mx-0">
-              Brief description with insights into myself, my vocational
-              journey, and what I engage in professionally.
+            At the Crossroads of creativity and compatibility, I craft digital wonders with a touch of magic. I bring a competitive edge and versatility to seamlessly tackle a spectrum of projects with finesse.
             </p>
             {/* buttons  */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -70,9 +69,9 @@ const Hero = () => {
             <Badge
               containerStyles="absolute top-[55%] -right-8"
               icon={<RiTeamFill />}
-              endCountNum={"23+"}
+              endCountNum={275}
               // endCountText={'k'}
-              badgeText="Happy Clients"
+              badgeText="+ Active Commits"
             />
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2  "></div>
             <DevImg

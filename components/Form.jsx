@@ -15,12 +15,12 @@ const Form = () => {
       {/* input  */}
       <input type="hidden" name="access_key" value="db1deed2-56e4-4948-8a63-cbee0b614cbd" />
       <div className="relative flex items-center">
-        <Input type="name" id="name" name="name" placeholder="Name" />
+        <Input type="name" id="name" name="name" required placeholder="Name" />
         <User className="absolute right-6" size={20} />
       </div>
       {/* input  */}
       <div className="relative flex items-center">
-        <Input type="email" id="email" name="email" placeholder="Email" />
+        <Input type="email" id="email" name="email" required placeholder="Email" />
         <MailIcon className="absolute right-6" size={20} />
       </div>
       {/* input  */}
@@ -29,6 +29,7 @@ const Form = () => {
           id="message"
           name="message"
           placeholder="Type your message here."
+          required
         />
         <MessageSquare className="absolute top-4 right-6" size={20} />
       </div>
