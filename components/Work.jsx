@@ -17,7 +17,7 @@ import ProjectCard from "./ProjectCard";
 
 const projectData = [
   {
-    image: "/work/4.png",
+    image: "/work/expense_Tracker.png",
     category: "react js",
     name: "Personal Expense Tracker",
     description:
@@ -26,7 +26,7 @@ const projectData = [
     github: "https://github.com/AkshayPratapSingh09/React-Expense-Tracker",
   },
   {
-    image: "/work/4.png",
+    image: "/work/ela.png",
     category: "react js",
     name: "ELA - Ecommerce",
     description:
@@ -35,7 +35,7 @@ const projectData = [
     github: "https://github.com/AkshayPratapSingh09/React-Ecom-Site",
   },
   {
-    image: "/work/4.png",
+    image: "/work/movie.png",
     category: "react js",
     name: "Movie Recommender",
     description:
@@ -44,7 +44,7 @@ const projectData = [
     github: "https://github.com/AkshayPratapSingh09/movie-recommendation-system",
   },
   {
-    image: "/work/4.png",
+    image: "/work/Bookey.png",
     category: "react js",
     name: "Bookey - The Bookmark App",
     description:

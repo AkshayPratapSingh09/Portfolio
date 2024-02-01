@@ -5,7 +5,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    image: "/work/3.png",
+    image: "/work/shopper-assist.png",
     category: "react js",
     name: "Shoppers Assist",
     description:
@@ -14,7 +14,7 @@ const projectData = [
     github: "https://github.com/AkshayPratapSingh09/Shoper",
   },
   {
-    image: "/work/1.png",
+    image: "/work/Wordly.png",
     category: "react js",
     name: "Wordly Text Playground",
     description:
@@ -23,7 +23,7 @@ const projectData = [
     github: "https://github.com/AkshayPratapSingh09/Wordly--Text-Playground",
   },
   {
-    image: "/work/2.png",
+    image: "/work/The-idea-app.png",
     category: "react js",
     name: "The Idea App",
     description:
@@ -32,7 +32,7 @@ const projectData = [
     github: "https://github.com/AkshayPratapSingh09/The-Idea-App",
   },
   {
-    image: "/work/2.png",
+    image: "/work/gemini_chat.png",
     category: "Html CSS",
     name: "Gemini AI Extension",
     description:
@@ -41,7 +41,7 @@ const projectData = [
     github: "https://github.com/AkshayPratapSingh09/Gemini-Extension",
   },
   {
-    image: "/work/4.png",
+    image: "/work/styler.png",
     category: "react js",
     name: "Style - Find Fonts",
     description:
@@ -50,7 +50,7 @@ const projectData = [
     github: "https://github.com/AkshayPratapSingh09/Styler",
   },
   {
-    image: "/work/4.png",
+    image: "/work/expense_Tracker.png",
     category: "react js",
     name: "Personal Expense Tracker",
     description:
@@ -59,7 +59,7 @@ const projectData = [
     github: "https://github.com/AkshayPratapSingh09/React-Expense-Tracker",
   },
   {
-    image: "/work/4.png",
+    image: "/work/ela.png",
     category: "react js",
     name: "ELA - Ecommerce",
     description:
@@ -68,7 +68,7 @@ const projectData = [
     github: "https://github.com/AkshayPratapSingh09/React-Ecom-Site",
   },
   {
-    image: "/work/4.png",
+    image: "/work/movie.png",
     category: "react js",
     name: "Movie Recommender",
     description:
@@ -77,7 +77,7 @@ const projectData = [
     github: "https://github.com/AkshayPratapSingh09/movie-recommendation-system",
   },
   {
-    image: "/work/4.png",
+    image: "/work/Bookey.png",
     category: "react js",
     name: "Bookey - The Bookmark App",
     description:
