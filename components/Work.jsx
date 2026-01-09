@@ -24,6 +24,7 @@ const projectData = [
       "Fix your budget and track your Expenses!",
     link: "https://geekap09.github.io/React-Expense-Tracker/",
     github: "https://github.com/AkshayPratapSingh09/React-Expense-Tracker",
+    align: "object-center",
   },
   {
     image: "/work/ela.png",
@@ -33,6 +34,7 @@ const projectData = [
       "Fully Functional Ecommerce Web App for Shopping Goods.",
     link: "http://devap09.pythonanywhere.com/#/",
     github: "https://github.com/AkshayPratapSingh09/React-Ecom-Site",
+    align: "object-top",
   },
   {
     image: "/work/movie.png",
@@ -42,6 +44,7 @@ const projectData = [
       "Movie Recommendation System based on IMDb data.",
     link: "https://geekap09-movie-recommendation-system-1-we-dy9j2v.streamlit.app/",
     github: "https://github.com/AkshayPratapSingh09/movie-recommendation-system",
+    align: "object-top",
   },
   {
     image: "/work/Bookey.png",
@@ -51,6 +54,7 @@ const projectData = [
       "One Spot for storing your Bookmarks and readlists!",
     link: "https://bookey.vercel.app/",
     github: "https://github.com/GeekAp09/Bookey",
+    align: "object-top",
   },
 ];
 
@@ -62,7 +66,7 @@ const Work = () => {
         <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4"> My Latest Projects</h2>
           <p className="subtitle mb-8">
-            Learnings made ideas and insiprations into Reality 
+            Learnings made ideas and insiprations into Reality
           </p>
           <Link href="/projects">
             <Button>All Projects</Button>

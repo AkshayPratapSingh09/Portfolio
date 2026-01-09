@@ -8,7 +8,7 @@ import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 import { usePathname } from "next/navigation";
 
-const header = () => {
+const Header = () => {
   const [header, setHeader] = useState(false);
   const pathname = usePathname();
 
@@ -51,4 +51,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;

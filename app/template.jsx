@@ -2,7 +2,8 @@
 
 import { motion } from 'framer-motion'
 // hooks 
-import useScrollProgress from '@/hooks/useScrollProgress'
+// import useScrollProgress from '@/hooks/useScrollProgress'
+import customProgressBar from './customProgressBar'
 // variants 
 const variants = {
     hidden: { opacity: 0 },
@@ -10,7 +11,7 @@ const variants = {
 }
 
 const Template = ({ children }) => {
-    const completion = useScrollProgress();
+    const completion = customProgressBar();
     return (
         <>
             <motion.main

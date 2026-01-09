@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
+import "./hero.module.css";
 
 import {
   RiBriefcase4Fill,
@@ -16,15 +17,15 @@ import Socials from "./Socials";
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section id="yewala" className="py-12 xl:py-24 h-[84vh] xl:pt-28 ">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text  */}
-          <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
+          <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left border-red-700">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Full Stack Developer
             </div>
-            <h1 className="h1 mb-4">Hello , my name is <h1 className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Akshay Pratap Singh</h1></h1>
+            <h1 className="h1 mb-4">Hello , my name is <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Akshay Pratap Singh</span></h1>
             <p className="subtitle max-w-[490] mx-auto xl:mx-0">
             At the Crossroads of creativity and compatibility, I craft digital wonders with a touch of magic. I bring a competitive edge and versatility to seamlessly tackle a spectrum of projects with finesse.
             </p>

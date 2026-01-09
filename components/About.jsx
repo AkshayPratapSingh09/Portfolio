@@ -57,7 +57,7 @@ const qualificationData = [
         university:
           "Noida Institute of Engineering And Technology, Greater Noida",
         qualification: "Bachelor of Technology (CSE)",
-        years: "2021 - Present",
+        years: "2021 - 2025",
       },
       // {
       //   university: "LPU University",
@@ -76,21 +76,11 @@ const qualificationData = [
     title: "experience",
     data: [
       {
-        company: "Upwork",
-        role: "Freelance Web developer",
-        years: "2022 - Present",
+        company: "Wipro",
+        role: "Project Engineer",
+        years: "Dec 2025 - Present",
       },
-
-      {
-        company: "Codewoofer.in",
-        role: "Blogger",
-        years: "Jul 2023 - Sep 2023 ",
-      },
-      {
-        company: "InternPe",
-        role: "Web Development intern",
-        years: "Apr 2023 - Jun 2023",
-      },
+      
     ],
   },
 ];
@@ -143,7 +133,7 @@ const About = () => {
   };
   //  console.log(getData(qualificationData , 'experience'))
   return (
-    <section className="xl:h-[860px] pb-12 pt-1 xl:py-24 ">
+    <section className="xl:h-auto pb-12 pt-1 xl:py-24 ">
       <div className="container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto pt-2">
           About me
@@ -217,10 +207,8 @@ const About = () => {
                     </h3>
                     {/* experience and education wrapper  */}
                     <div className="grid md:grid-cols-2 gap-y-8">
-                    {/* {
                       {/* experience  */}
-{/*     
-                       <div className="flex flex-col gap-y-6">
+                      <div className="flex flex-col gap-y-6">
                         <div className="flex gap-x-4 items-center text-[22px] text-primary">
                           <Briefcase />
                           <h4 className="capitalize font-medium">
@@ -252,7 +240,7 @@ const About = () => {
                             }
                           )}
                         </div>
-                      </div>    */}
+                      </div>
 
                       {/* education  */}
                       <div className="flex flex-col gap-y-6">
@@ -300,9 +288,9 @@ const About = () => {
                       <h4 className="text-xl font-semibold mb-2">
                         Skills (Full Stack Development)
                       </h4>
-                      <div className="border-b border-border mb-4"></div>
-                      {/* Skill List  */}
-                      <div>
+                      <div className="border-b border-border mb-4">
+                        {/* Skill List  */}
+                        {/* <div> */}
                         {getData(skillData, "skills").data.map(
                           (item, index) => {
                             const { name } = item;
@@ -310,7 +298,7 @@ const About = () => {
 
                             return (
                               <div
-                                className=" text-corner xl:text-left mx-auto xl:mx-0 mt-5"
+                                className=" text-corner xl:text-left mx-auto xl:mx-0 mt-5 overflow-auto"
                                 key={index}
                               >
                                 <div className="font-medium flex">
@@ -324,8 +312,8 @@ const About = () => {
                                         />
                                         <div className="hidden leading-none group-hover:block">
                                         </div>
-                                          {icon}
-                                        </div>
+                                        {icon}
+                                      </div>
                                     );
                                   })}
                                 </div>

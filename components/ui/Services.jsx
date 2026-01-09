@@ -30,7 +30,7 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className="mb-12 xl:mb-36">
+    <section className="mt-30 mb-12 xl:mb-36">
       <div className="container mx-auto">
         <h2 className="section-title mb-12 xl:mb-24 text-center mx-auto">
           My Services
@@ -40,17 +40,17 @@ const Services = () => {
           {servicesData.map((item, index) => {
             return (
               <Card
-                className="w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-18 justify-center items-center relative"
+                className="w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative bg-slate-100 dark:bg-secondary/20 border-2 border-transparent hover:border-primary hover:shadow-2xl transition-all duration-300 group"
                 key={index}
               >
                 <CardHeader className="text-primary absolute -top-[60px]">
-                  <div className="w-[140px] h-[90px] bg-white dark:bg-background flex justify-center items-center">
+                  <div className="w-[100px] h-[70px] bg-white dark:bg-slate-900 rounded-2xl flex justify-center items-center shadow-md group-hover:scale-110 transition-transform duration-300 box-content p-2">
                     {item.icon}
                   </div>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <CardTitle className="mb-4">{item.title}</CardTitle>
-                  <CardDescription className="text-lg">
+                  <CardTitle className="mb-4 text-2xl group-hover:text-primary transition-colors">{item.title}</CardTitle>
+                  <CardDescription className="text-lg text-muted-foreground/90">
                     {item.description}
                   </CardDescription>
                 </CardContent>

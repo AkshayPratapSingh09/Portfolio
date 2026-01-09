@@ -1,0 +1,151 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu-right-alt.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&display=swap');
+
+
+
+.wrapper {
+    font-family: 'Raleway', sans-serif;
+    background: rgb(183, 229, 145);
+    background: linear-gradient(87deg, rgba(183, 229, 145, 1) 1%, rgba(131, 222, 117, 1) 97%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  align-self: center;
+  width: 60vw;
+  height: 70vh;
+  background-color: white;
+  border-radius: 55px;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 0 5vh;
+}
+
+.navList {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+.navItem {
+  cursor: pointer;
+}
+
+.ham {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lower {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+
+.left {
+  max-width: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circleContainer {
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.circle {
+  width: 15%;
+  aspect-ratio: 1;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.social {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social img {
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.upperHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  gap: 10px;
+}
+
+.lowerHead {
+  display: flex;
+  font-size: 0.6em;
+  width: 100%;
+  align-items: flex-end;
+  gap: 2px;
+  padding-left: 22px;
+  padding-bottom: 60px;
+}
+
+.btn {
+  font-size: 0.65em;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 2em;
+  background-color: rgb(151, 213, 52);
+  color: white;
+}
+
+.env h3,
+.story h3 {
+  padding-bottom: 6px;
+}
+
+.heading1 {
+    font-size: 3em;
+    font-weight: 900;
+  }
+  
+  .paragraph {
+    color: rgb(175, 173, 173);
+  }
+  
+  .heading2 {
+    font-size: 1em;
+    font-weight: normal;
+    color: rgb(104, 104, 104);
+  }
+
+#planet {
+  padding-right: 20px;
+  width: 500px;
+}
