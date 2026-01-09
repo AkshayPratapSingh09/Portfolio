@@ -1,27 +1,11 @@
-// import React from 'react'
-// import Image from 'next/image'
-// import styles from "./first.module.css"
-// import MainImage from "../first/image.jpg";
+import React from 'react'
 
-// const page = () => {
-//   return (
-//     <div className={styles.wrapper}>
+const FirstPage = () => {
+    return (
+        <div className="flex items-center justify-center h-screen">
+            <h1>Frontend Challenge 1 - Coming Soon</h1>
+        </div>
+    )
+}
 
-//     <div className={styles.container}>
-//     <div className={styles.card}>
-//       <div className={styles.front}>
-//         <Image src={MainImage} width={260} height={220} alt="Nike Awesome Red Shoes" />
-//         <h2>$300</h2>
-//         <h3>Nike Awesome Red Shoes</h3>
-//         <h6>Brand New Collection</h6>
-//       </div>
-//       <div className={styles.back}>
-//         <button>Add to Cart</button>
-//       </div>
-//     </div>
-//   </div>
-//   </div>
-//   )
-// }
-
-// export default page
+export default FirstPage
