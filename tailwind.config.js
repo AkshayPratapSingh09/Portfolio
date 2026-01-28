@@ -6,17 +6,20 @@ module.exports = {
     './components/**/*.{js,jsx}',
     './app/**/*.{js,jsx}',
     './src/**/*.{js,jsx}',
-	],
+  ],
   theme: {
     container: {
       center: true,
       padding: "2rem",
     },
+    fontFamily: {
+      sans: ["var(--font-outfit)", "sans-serif"],
+    },
     screens: {
-     sm: '640px',
-     md: '768px',
-     lg: '1024px',
-     xl: '1400px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1400px',
     },
     extend: {
       colors: {
@@ -72,12 +75,21 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        "text-slide-5": {
+          "0%, 16%": { transform: "translateY(0%)" },
+          "20%, 36%": { transform: "translateY(-16.66%)" },
+          "40%, 56%": { transform: "translateY(-33.33%)" },
+          "60%, 76%": { transform: "translateY(-50%)" },
+          "80%, 96%": { transform: "translateY(-66.66%)" },
+          "100%": { transform: "translateY(-83.33%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "text-slide-5": "text-slide-5 12.5s cubic-bezier(0.83, 0, 0.17, 1) infinite",
       },
-      backgroundImage :{
+      backgroundImage: {
         hero: 'url(/hero/hero-bg.png)',
         hero_shape: 'url(/hero/shape-1.svg)',
         hero_shape2_light: 'url(/hero/shape-2-light.svg)',
@@ -90,7 +102,7 @@ module.exports = {
         work_project_bg_dark: 'url(/work/project-bg-dark.png)',
         contact_illustration_light: 'url(/contact/illustration-light.svg)',
         contact_illustration_dark: 'url(/contact/illustration-dark.svg)',
-      }
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

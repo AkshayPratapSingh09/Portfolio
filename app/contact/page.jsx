@@ -41,7 +41,7 @@ const Contact = () => {
             {/* phone  */}
             <div className="flex items-center gap-x-8">
               <PhoneCall size={18} className="text-primary" />
-              <div className=" hover:cursor-pointer">+91 904 430 4479</div>
+              <div className=" hover:cursor-pointer">+919045304479</div>
             </div>
           </div>
           <Form />

@@ -7,9 +7,10 @@ import Footer from "@/components/Footer";
 // ThemeProvider
 import { ThemeProvider } from "@/components/ThemeProvider";
 
-const outfit = Outfit({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata = {
+  metadataBase: new URL("https://akshay09.pages.dev"),
   title: "Akshay Pratap Singh | GenAI & Full Stack Developer",
   description:
     "Portfolio of Akshay Pratap Singh, a GenAI Developer and Full Stack Developer. Specializing in AI Integrated Apps, Web Development, and Next.js.",
@@ -50,7 +51,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={outfit.className}>
+      <body className={outfit.className + " " + outfit.variable}>
         <script src="./particles.min.js"></script>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Header />

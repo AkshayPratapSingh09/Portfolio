@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
-import "./hero.module.css";
+
 
 import {
   RiBriefcase4Fill,
@@ -17,7 +17,7 @@ import Socials from "./Socials";
 
 const Hero = () => {
   return (
-    <section id="yewala" className="py-12 xl:py-24 h-[84vh] xl:pt-28 ">
+    <section id="yewala" className="py-12 xl:py-24 h-auto xl:h-[84vh] xl:pt-28 ">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text  */}
@@ -27,7 +27,7 @@ const Hero = () => {
             </div>
             <h1 className="h1 mb-4">Hello , my name is <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Akshay Pratap Singh</span></h1>
             <p className="subtitle max-w-[490] mx-auto xl:mx-0">
-            At the Crossroads of creativity and compatibility, I craft digital wonders with a touch of magic. I bring a competitive edge and versatility to seamlessly tackle a spectrum of projects with finesse.
+              At the Crossroads of creativity and compatibility, I craft digital wonders with a touch of magic. I bring a competitive edge and versatility to seamlessly tackle a spectrum of projects with finesse.
             </p>
             {/* buttons  */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">

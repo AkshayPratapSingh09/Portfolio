@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
-import ProjectCard from "@/components/ProjectCard";
+import LinearProjectCard from "@/components/LinearProjectCard";
 
 const projectData = [
   {
@@ -127,11 +127,11 @@ const Projects = () => {
             })}
           </TabsList>
           {/* tabs content  */}
-          <div className="text-lg xl:mt-8 grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="text-lg xl:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProjects.map((project, index) => {
               return (
                 <TabsContent value={category} key={index}>
-                  <ProjectCard project={project} />
+                  <LinearProjectCard project={project} />
                 </TabsContent>
               );
             })}
