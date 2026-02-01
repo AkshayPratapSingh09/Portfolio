@@ -16,8 +16,8 @@ const Template = ({ children }) => {
         <>
             <motion.main
                 variants={variants}
-                initial='hidden'
-                animate='enter'
+                initial={{ opacity: 1 }}
+                animate={{ opacity: 1 }}
                 transition={{ type: 'linear', delay: 0.2, duration: 0.4 }}
             >
                 {children}
