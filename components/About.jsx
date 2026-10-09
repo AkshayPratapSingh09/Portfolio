@@ -78,9 +78,8 @@ const qualificationData = [
       {
         company: "Wipro",
         role: "Project Engineer",
-        years: "Dec 2025 - Present",
+        years: "March 2026 - Present",
       },
-      
     ],
   },
 ];
@@ -294,7 +293,6 @@ const About = () => {
                         {getData(skillData, "skills").data.map(
                           (item, index) => {
                             const { name } = item;
-                            console.log(name);
 
                             return (
                               <div
@@ -302,10 +300,12 @@ const About = () => {
                                 key={index}
                               >
                                 <div className="font-medium flex">
-                                  {name.map((icon) => {
-                                    console.log(icon);
+                                  {name.map((icon, iconIdx) => {
                                     return (
-                                      <div className="group mx-1 mb-4 hover:translate-y-[-20px] transition-all duration-300">
+                                      <div
+                                        key={icon || iconIdx}
+                                        className="group mx-1 mb-4 hover:translate-y-[-20px] transition-all duration-300"
+                                      >
                                         <img
                                           src={`./about/${icon}.svg`}
                                           alt=""

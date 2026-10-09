@@ -17,43 +17,73 @@ import ProjectCard from "./ProjectCard";
 
 const projectData = [
   {
-    image: "/work/expense_Tracker.png",
-    category: "react js",
-    name: "Personal Expense Tracker",
+    image: "/work/intelligent-loan-advisor.png",
+    category: "AI & GenAI",
+    name: "Intelligent Loan Advisor",
     description:
-      "Fix your budget and track your Expenses!",
-    link: "https://geekap09.github.io/React-Expense-Tracker/",
-    github: "https://github.com/AkshayPratapSingh09/React-Expense-Tracker",
-    align: "object-center",
-  },
-  {
-    image: "/work/ela.png",
-    category: "react js",
-    name: "ELA - Ecommerce",
-    description:
-      "Fully Functional Ecommerce Web App for Shopping Goods.",
-    link: "http://devap09.pythonanywhere.com/#/",
-    github: "https://github.com/AkshayPratapSingh09/React-Ecom-Site",
+      "Enterprise GenAI & RAG assistant for banking policies, underwriting rules, and loan eligibility with citation tracking.",
+    link: "https://github.com/suyogyadav404/Intelligent-Loan-Advisor-and-Policy-Assistant",
+    github: "https://github.com/suyogyadav404/Intelligent-Loan-Advisor-and-Policy-Assistant",
     align: "object-top",
   },
   {
-    image: "/work/movie.png",
-    category: "react js",
-    name: "Movie Recommender",
+    image: "/work/whisper-self.png",
+    category: "AI & GenAI",
+    name: "WhisperSelf Voice Dictation",
     description:
-      "Movie Recommendation System based on IMDb data.",
-    link: "https://geekap09-movie-recommendation-system-1-we-dy9j2v.streamlit.app/",
-    github: "https://github.com/AkshayPratapSingh09/movie-recommendation-system",
+      "Sub-second on-device voice dictation for Apple Silicon powered by ANE, Metal shaders, Silero VAD, and floating HUD.",
+    link: "https://github.com/AkshayPratapSingh09/WhisperSelf",
+    github: "https://github.com/AkshayPratapSingh09/WhisperSelf",
     align: "object-top",
   },
   {
-    image: "/work/Bookey.png",
-    category: "react js",
-    name: "Bookey - The Bookmark App",
+    image: "/work/hisab-app.png",
+    category: "Mobile Apps",
+    name: "HisabApp — Personal Finance",
     description:
-      "One Spot for storing your Bookmarks and readlists!",
-    link: "https://bookey.vercel.app/",
-    github: "https://github.com/GeekAp09/Bookey",
+      "Privacy-first wealth tracker with automated multi-bank statement parsing, spending breakdowns, and NLP ingestion.",
+    link: "https://github.com/AkshayPratapSingh09/HisabApp",
+    github: "https://github.com/AkshayPratapSingh09/HisabApp",
+    align: "object-top",
+  },
+  {
+    image: "/work/explainer-ai.png",
+    category: "AI & GenAI",
+    name: "ExplainerAI",
+    description:
+      "Voice-first conversational AI transforming complex technical and financial topics into natural Hinglish speech.",
+    link: "https://github.com/AkshayPratapSingh09/ExplainerAI",
+    github: "https://github.com/AkshayPratapSingh09/ExplainerAI",
+    align: "object-top",
+  },
+  {
+    image: "/work/clipboard-sync.png",
+    category: "Systems & Tools",
+    name: "ClipboardSync & Auto-Typer",
+    description:
+      "High-speed typing simulator and cross-device clipboard sync engine with WebSocket pairing and smart indentation.",
+    link: "https://github.com/AkshayPratapSingh09/Clipboard-Sync",
+    github: "https://github.com/AkshayPratapSingh09/Clipboard-Sync",
+    align: "object-top",
+  },
+  {
+    image: "/work/mymem.png",
+    category: "Mobile Apps",
+    name: "MyMem Social Media Vault",
+    description:
+      "Instagram link preview extractor triggering automated GitHub Actions to persist structured JSON records.",
+    link: "https://github.com/AkshayPratapSingh09/mymem",
+    github: "https://github.com/AkshayPratapSingh09/mymem",
+    align: "object-top",
+  },
+  {
+    image: "/work/dsa-tracker.png",
+    category: "Full Stack & Web",
+    name: "DSA Mastery Tracker",
+    description:
+      "Daily algorithmic problem tracking dashboard featuring GitHub sync, topic metrics, company tags, and calendar planner.",
+    link: "https://github.com/AkshayPratapSingh09/DSA-Tracker",
+    github: "https://github.com/AkshayPratapSingh09/DSA-Tracker",
     align: "object-top",
   },
 ];
@@ -86,8 +116,8 @@ const Work = () => {
             modules={[Pagination]}
             pagination={{ clickable: true }}
           >
-            {/* show only the first 4 projects for the slides  */}
-            {projectData.slice(0, 4).map((project, index) => {
+            {/* show latest projects for the slides  */}
+            {projectData.map((project, index) => {
               return (
                 <SwiperSlide key={index}>
                   <ProjectCard project={project} />

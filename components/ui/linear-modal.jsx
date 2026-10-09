@@ -138,27 +138,19 @@ export function DialogContent({ children, className, style }) {
 
 export function DialogImage({ src, alt, className }) {
     return (
-        <motion.img
+        <img
             src={src}
             alt={alt}
             className={className}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3, delay: 0.1 }}
         />
     );
 }
 
 export function DialogTitle({ children, className }) {
     return (
-        <motion.h2
-            className={className}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.05 }}
-        >
+        <h2 className={className}>
             {children}
-        </motion.h2>
+        </h2>
     );
 }
 

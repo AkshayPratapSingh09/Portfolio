@@ -77,27 +77,27 @@ const Reviews = () => {
       <div className="container mx-auto">
         <h2 className="section-title mb-12 text-center mx-auto">Certifications</h2>
         {/* slider  */}
-        <section >
-	<div class="slider-wrapper">
-		<div class="slider">
-      {certificates.map((item)=>{
-        console.log(item)
-        return (
-          <img id="slide-1" src={item} alt="3D rendering of an imaginary orange planet in space" />
-
-        )
-      })}
-			{/* <img id="slide-2" src="./certificate/microsoft-2.png" alt="3D rendering of an imaginary green planet in space" />
-			<img id="slide-3" src="./certificate/microsoft-3.png" alt="3D rendering of an imaginary green planet in space" />
-			<img id="slide-3" src="https://images.unsplash.com/photo-1656077217715-bdaeb06bd01f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary blue planet in space" /> */}
-		</div>
-		<div class="slider-nav">
-		<a href="#slide-1"></a>
-			<a href="#slide-2"></a>
-			<a href="#slide-3"></a> 
-		</div>
-	</div>
-</section>
+        <section>
+          <div className="slider-wrapper">
+            <div className="slider">
+              {certificates.map((item, index) => {
+                return (
+                  <img
+                    key={index}
+                    id={`slide-${index + 1}`}
+                    src={item}
+                    alt="Certification credential"
+                  />
+                );
+              })}
+            </div>
+            <div className="slider-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
   );

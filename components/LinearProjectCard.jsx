@@ -19,20 +19,20 @@ const LinearProjectCard = ({ project }) => {
         <Dialog>
             <DialogTrigger
                 style={{
-                    borderRadius: "12px",
+                    borderRadius: "16px",
                 }}
-                className="flex w-full h-full flex-col overflow-hidden border-3 border-slate-200 dark:border-slate-700 shadow-md hover:shadow-lg dark:bg-secondary/40 bg-neutral-50 hover:bg-neutral-100 dark:hover:bg-secondary/60 transition-all"
+                className="group flex w-full h-full flex-col overflow-hidden border border-slate-200/80 dark:border-slate-800 shadow-sm hover:shadow-xl dark:bg-secondary/40 bg-card hover:bg-neutral-50/50 dark:hover:bg-secondary/60 transition-all text-left"
             >
                 {/* Image Section */}
                 <div className="relative h-52 w-full bg-slate-100 dark:bg-slate-900/50 flex items-center justify-center overflow-hidden">
                     <DialogImage
                         src={project.image}
                         alt={project.name}
-                        className="h-full w-full object-cover object-top"
+                        className="h-full w-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     />
                     {/* Code Icon Overlay */}
-                    <div className="absolute top-3 left-3 p-2 bg-white/80 dark:bg-black/50 backdrop-blur-sm rounded-lg">
-                        <Code2 className="w-5 h-5 text-primary" />
+                    <div className="absolute top-3 left-3 p-2 bg-white/90 dark:bg-black/60 backdrop-blur-md rounded-lg shadow-sm border border-black/5 dark:border-white/10">
+                        <Code2 className="w-4 h-4 text-primary" />
                     </div>
                 </div>
 
