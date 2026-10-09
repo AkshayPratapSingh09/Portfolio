@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import cachedData from '@/public/github-contributions-cache.json';
 
+export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 export async function GET() {
@@ -27,27 +27,16 @@ export async function GET() {
       });
     }
   } catch (err) {
-    console.error('Error fetching live GitHub contributions:', err.message, err.cause);
+    console.error('Error fetching live GitHub contributions:', err?.message || err);
   }
 
-  // Fallback to static cache if external API fails or rate-limits
-  try {
-    const cachePath = path.join(
-      process.cwd(),
-      'public',
-      'github-contributions-cache.json'
-    );
-    if (fs.existsSync(cachePath)) {
-      const fileContent = fs.readFileSync(cachePath, 'utf8');
-      const cachedData = JSON.parse(fileContent);
-      return NextResponse.json({
-        success: true,
-        source: 'cached',
-        ...cachedData,
-      });
-    }
-  } catch (cacheErr) {
-    console.error('Error loading cached contributions:', cacheErr);
+  // Fallback to bundled cache if external API fails or rate-limits
+  if (cachedData) {
+    return NextResponse.json({
+      success: true,
+      source: 'cached',
+      ...cachedData,
+    });
   }
 
   return NextResponse.json(
