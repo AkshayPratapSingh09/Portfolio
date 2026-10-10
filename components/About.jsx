@@ -84,6 +84,35 @@ const qualificationData = [
   },
 ];
 
+const skillNames = {
+  python: "Python",
+  java: "Java",
+  html: "HTML5",
+  css: "CSS3",
+  js: "JavaScript",
+  react: "React",
+  nextjs: "Next.js",
+  bootstrap: "Bootstrap",
+  vite: "Vite",
+  typescript: "TypeScript",
+  tailwind: "Tailwind CSS",
+  vercel: "Vercel",
+  flask: "Flask",
+  django: "Django",
+  replit: "Replit",
+  codepen: "CodePen",
+  figma: "Figma",
+  postman: "Postman",
+  mongodb: "MongoDB",
+  postgres: "PostgreSQL",
+  mysql: "MySQL",
+  sqlite: "SQLite",
+  redis: "Redis",
+  vscode: "VS Code",
+  docker: "Docker",
+  firebase: "Firebase",
+};
+
 const skillData = [
   {
     title: "skills",
@@ -148,17 +177,17 @@ const About = () => {
           {/* tabs  */}
           <div className="flex-1">
             <Tabs defaultValue="personal">
-              <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
-                <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
+              <TabsList className="w-full grid grid-cols-3 max-w-[520px] mx-auto xl:mx-0 border dark:border-none p-1">
+                <TabsTrigger className="w-auto text-xs sm:text-sm md:text-base px-2 py-1.5 truncate" value="personal">
                   Personal Info
                 </TabsTrigger>
                 <TabsTrigger
-                  className="w-[162px] xl:w-auto"
+                  className="w-auto text-xs sm:text-sm md:text-base px-2 py-1.5 truncate"
                   value="qualifications"
                 >
                   Qualifications
                 </TabsTrigger>
-                <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
+                <TabsTrigger className="w-auto text-xs sm:text-sm md:text-base px-2 py-1.5 truncate" value="skills">
                   Skills
                 </TabsTrigger>
               </TabsList>
@@ -281,42 +310,47 @@ const About = () => {
                 </TabsContent>
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8">What I Use Everyday</h3>
+                    <h3 className="h3 mb-6">What I Use Everyday</h3>
                     {/* skills  */}
-                    <div className="mb-26">
-                      <h4 className="text-xl font-semibold mb-2">
+                    <div className="mb-10">
+                      <h4 className="text-xl font-semibold mb-2 text-center xl:text-left">
                         Skills (Full Stack Development)
                       </h4>
-                      <div className="border-b border-border mb-4">
-                        {/* Skill List  */}
-                        {/* <div> */}
+                      <div className="border-b border-border mb-6"></div>
+                      {/* Skill List  */}
+                      <div className="flex flex-col gap-y-4">
                         {getData(skillData, "skills").data.map(
                           (item, index) => {
                             const { name } = item;
 
                             return (
                               <div
-                                className=" text-corner xl:text-left mx-auto xl:mx-0 mt-5 overflow-auto"
+                                className="flex flex-wrap items-center justify-center xl:justify-start gap-2 sm:gap-3 py-1"
                                 key={index}
                               >
-                                <div className="font-medium flex">
-                                  {name.map((icon, iconIdx) => {
-                                    return (
-                                      <div
-                                        key={icon || iconIdx}
-                                        className="group mx-1 mb-4 hover:translate-y-[-20px] transition-all duration-300"
-                                      >
+                                {name.map((icon, iconIdx) => {
+                                  const displayName = skillNames[icon] || icon;
+                                  return (
+                                    <div
+                                      key={icon || iconIdx}
+                                      className="group flex flex-col items-center justify-center w-[72px] sm:w-[78px] py-2 px-1 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:bg-slate-100 dark:hover:bg-secondary/40 cursor-default"
+                                      title={displayName}
+                                    >
+                                      <div className="w-12 h-12 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
                                         <img
                                           src={`./about/${icon}.svg`}
-                                          alt=""
+                                          alt={displayName}
+                                          width={48}
+                                          height={48}
+                                          className="w-12 h-12 object-contain"
                                         />
-                                        <div className="hidden leading-none group-hover:block">
-                                        </div>
-                                        {icon}
                                       </div>
-                                    );
-                                  })}
-                                </div>
+                                      <span className="mt-1.5 text-xs font-medium text-muted-foreground group-hover:text-primary text-center truncate max-w-full transition-colors">
+                                        {icon}
+                                      </span>
+                                    </div>
+                                  );
+                                })}
                               </div>
                             );
                           }
@@ -324,24 +358,34 @@ const About = () => {
                       </div>
                     </div>
                     {/* tools  */}
-                    <div className="mx-2">
-                      <h4 className="text-xl font-semibold mb-2 xl:text-left">
+                    <div>
+                      <h4 className="text-xl font-semibold mb-2 text-center xl:text-left">
                         Tools
                       </h4>
-                      <div className="border-b border-border mb-4"></div>
+                      <div className="border-b border-border mb-6"></div>
                       {/* tool list  */}
-                      <div className="flex gap-x-2 justify-center xl:justify-start">
+                      <div className="flex flex-wrap items-center justify-center xl:justify-start gap-2 sm:gap-3 py-1">
                         {getData(skillData, "tools").data.map((item, index) => {
                           const { path } = item;
+                          const displayName = skillNames[path] || path;
                           return (
-                            <div key={index}>
-                              <img
-                                src={`./about/${path}.svg`}
-                                width={48}
-                                height={48}
-                                alt=""
-                                priority
-                              />
+                            <div
+                              key={index}
+                              className="group flex flex-col items-center justify-center w-[72px] sm:w-[78px] py-2 px-1 rounded-xl transition-all duration-300 hover:-translate-y-1 hover:bg-slate-100 dark:hover:bg-secondary/40 cursor-default"
+                              title={displayName}
+                            >
+                              <div className="w-12 h-12 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                                <img
+                                  src={`./about/${path}.svg`}
+                                  width={48}
+                                  height={48}
+                                  alt={displayName}
+                                  className="w-12 h-12 object-contain"
+                                />
+                              </div>
+                              <span className="mt-1.5 text-xs font-medium text-muted-foreground group-hover:text-primary text-center truncate max-w-full transition-colors">
+                                {path}
+                              </span>
                             </div>
                           );
                         })}
